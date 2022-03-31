@@ -1,0 +1,59 @@
+.contactPage {
+    width: 100%;
+    height: 90vh;
+    background-image: url('https://images.unsplash.com/photo-1544386978-f09d9ee45654?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=3294&q=80');
+    background-size: cover;
+
+    .contctPage__title {
+        text-align: center;
+        padding-top: 120px;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .contactPage__info {
+        padding: 30px 60px;
+        display: flex;
+        height: 400px;
+
+        //flex-grow: 1;
+        .meil {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(29, 45, 73);
+
+            form {
+                display: flex;
+                flex-direction: column;
+                padding: 50px 60px;
+                justify-content: space-around;
+
+                input {
+                    margin-bottom: 10px;
+                    padding: 10px 5px;
+                    font-size: 15px;
+                }
+
+                textarea {
+                    margin-bottom: 10px;
+                    padding: 10px 5px;
+                    font-size: 15px;
+                }
+
+                button {
+                    cursor: pointer;
+                    font-size: 20px;
+                    color: white;
+                    background-color: transparent;
+                    border: 0px;
+
+                }
+            }
+        }
+
+        .googleMaps {
+            width: 50%;
+        }
+    }
+}

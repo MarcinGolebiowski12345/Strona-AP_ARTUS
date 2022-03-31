@@ -1,0 +1,228 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    //font-family: 'Roboto', sans-serif;
+}
+
+.frontPage {
+    width: 100%;
+    height: 100vh;
+
+    .header {
+        position: fixed;
+        width: 100%;
+        //height: 80px;
+        background-color: rgb(42, 68, 113);
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .container__logo {
+                width: 200px;
+                height: 60px;
+                background-image: url("../img/apartus_logo.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .container__menuPhone {
+                display: none;
+                position: absolute;
+                right: 50px;
+
+                .hamburger {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background-color: white;
+                    border: 0px;
+                    cursor: pointer;
+                    width: 35px;
+                    height: 27px;
+
+                    .hamburger__bars {
+                        height: 4px;
+                        width: 100%;
+                        background-color: black;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .container__menu {
+                //display: none;
+                width: 500px;
+                cursor: pointer;
+
+                .container__items {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                        border-bottom: 2px solid transparent;
+                        text-transform: uppercase;
+
+                        .item {
+                            text-decoration: none;
+                            color: white;
+                            font-weight: 700;
+                            transition: 0.1s;
+                        }
+
+                        .item__phone {
+                            text-decoration: none;
+                            color: white;
+                            padding: 5px 10px;
+                            border: 2px solid white;
+                            font-weight: 700;
+                            transition: 0.5s;
+                        }
+
+                        .item__list {
+                            display: none;
+                            list-style: none;
+                            position: absolute;
+                            background-color: rgb(42, 68, 113);
+                            padding: 0px 5px;
+                            margin-top: 2px;
+                            transform: translateX(-5px);
+
+                            li {
+                                padding-top: 5px;
+
+                                a {
+                                    font-weight: 700;
+                                    color: white;
+                                    text-decoration: none;
+                                    transition: 0.1s;
+                                }
+                            }
+
+                            li:hover a {
+                                color: rgb(207, 194, 194);
+                            }
+                        }
+
+                        .item__phone:hover {
+                            background-color: white;
+                            color: black;
+                        }
+
+                        .item:hover {
+                            color: rgb(207, 194, 194);
+                            border-bottom: 2px solid rgb(207, 194, 194);
+                        }
+                    }
+
+                    #itemOffer:hover>.item__list {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        background-image: url("../img/car-wash-g1a06f35a5_1920.jpg");
+        background-size: cover;
+
+
+        .main__name {
+            font-size: 50px;
+            padding-top: 260px;
+            padding-left: 100px;
+            text-transform: uppercase;
+            font-weight: 900;
+            line-height: 2cm;
+            color: white;
+            text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+                0px 8px 13px rgba(0, 0, 0, 0.2),
+                0px 18px 23px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .frontPage {
+        width: 100%;
+
+        .header {
+            width: 100%;
+            background-color: white;
+
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .container__logo {
+                    height: 35px;
+                    width: 120px;
+                }
+
+                .container__menuPhone {
+                    display: block;
+                }
+
+                .container__menu {
+                    width: 100%;
+
+
+                    .container__items {
+                        //display: flex;
+                        flex-direction: column;
+
+                        li {
+                            .item {
+                                color: black;
+                                border: 0px;
+                            }
+
+                            .item__phone {
+                                color: black;
+                                border: 0px;
+                            }
+                        }
+
+                        #itemOffer {
+                            .item__list {
+
+                                position: relative;
+
+                            }
+                        }
+
+                        #itemOffer:focus>.item__list {
+
+
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main {
+            .main__name {
+                font-size: 20px;
+            }
+        }
+    }
+}

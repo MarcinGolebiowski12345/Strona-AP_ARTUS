@@ -1,0 +1,29 @@
+.contactButton {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactButton .contact .contact__button {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 20px 40px;
+  border: 4px solid #1d2d49;
+  color: #1d2d49;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contactButton .contact .contact__button:hover {
+  background-color: #1d2d49;
+  color: white;
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,118 @@
+.offerTitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: auto 0px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-weight: 900;
+  color: white;
+  background-color: #1d2d49;
+}
+
+.offerPage {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.offerPage .buttonOffer {
+  list-style: none;
+  text-decoration: none;
+  width: 50%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.offerPage .buttonOffer .buttonOffer__container {
+  border: 15px solid white;
+  height: 390px;
+  overflow: hidden;
+}
+
+.offerPage .buttonOffer .buttonOffer__container .wash {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 2s;
+  transition: 2s;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.offerPage .buttonOffer .buttonOffer__container .wash .wash__name {
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.2), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.offerPage .buttonOffer #one {
+  background-image: url("../img/01.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.offerPage .buttonOffer #two {
+  background-image: url("../img/01 (1).jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.offerPage .buttonOffer #three {
+  background-image: url("../img/02.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.offerPage .buttonOffer #four {
+  background-image: url("../img/gasienicowe.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.offerPage .buttonOffer #five {
+  background-image: url("../img/obiegi_wod.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.offerPage .buttonOffer #six {
+  background-image: url("../img/przejazdowa.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.offerPage .buttonOffer #one:hover,
+.offerPage .buttonOffer #two:hover,
+.offerPage .buttonOffer #three:hover,
+.offerPage .buttonOffer #four:hover,
+.offerPage .buttonOffer #five:hover,
+.offerPage .buttonOffer #six:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+
+@media (max-width: 992px) {
+  .offerPage .buttonOffer {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=offer.css.map */

@@ -1,0 +1,25 @@
+.aboutPage .about {
+  padding: 140px 150px;
+  text-align: center;
+  background-color: #aaa2d5;
+}
+
+.aboutPage .about .about__title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.2), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.aboutPage .about .about__text {
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .aboutPage .about {
+    padding: 20px 5px;
+  }
+}
+/*# sourceMappingURL=about-page.css.map */
